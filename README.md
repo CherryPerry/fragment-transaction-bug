@@ -1,3 +1,8 @@
+### Issues
+
+https://issuetracker.google.com/issues/64338772
+https://issuetracker.google.com/issues/37135680
+
 ### Description
 
 If activity stops while fragment transition is running,
@@ -5,6 +10,7 @@ both of fragments are drawn after start,
 but the old one does not exist, just drawn like a ghost.
 
 ### Steps to reproduce
+
 1. Add fragments to backstack with `setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)`
 1. Call `onBackPressed()` and click recent apps at the same time.
 1. Open app from recent list
