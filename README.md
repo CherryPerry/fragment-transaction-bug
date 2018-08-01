@@ -16,6 +16,15 @@ but the old one does not exist, just drawn like a ghost.
 1. Open app from recent list
 1. Both of fragments are drawn, but clickable only valid one
 
+### Workaround
+
+```java
+public void onResume() {
+    super.onResume();
+    ((ViewGroup) activity.findViewById(R.id.host)).clearDisappearingChildren();
+}
+```
+
 ### Video
 
 ![ezgif-2-cf08197654](https://user-images.githubusercontent.com/9081555/43469630-48f3759e-94ef-11e8-825b-5b18c92bf1c1.gif)
